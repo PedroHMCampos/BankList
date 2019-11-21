@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Financial Institution</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="most_used">Mais utilizados</string>
+    <string name="others">Outros</string>
+</resources>

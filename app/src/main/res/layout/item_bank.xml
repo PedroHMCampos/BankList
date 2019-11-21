@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimenOf90dp"
+        app:cardCornerRadius="@dimen/dimenOf8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent "
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bank_image"
+                android:layout_width="@dimen/dimenOf35dp"
+                android:layout_height="@dimen/dimenOf35dp"
+                android:layout_marginStart="@dimen/dimenOf16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_launcher_background" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bank_name_text"
+                android:layout_width="@dimen/dimenOf0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimenOf16dp"
+                android:layout_marginEnd="@dimen/dimenOf16dp"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/arrow_detail_bank_image"
+                app:layout_constraintStart_toEndOf="@id/bank_image"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="104 - CAIXA ECONOMICA FEDERAL" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/arrow_detail_bank_image"
+                android:layout_width="@dimen/dimenOf40dp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bank_name_text"
+                app:srcCompat="@drawable/ic_arrow_black" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
